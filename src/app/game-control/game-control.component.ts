@@ -24,4 +24,9 @@ export class GameControlComponent implements OnInit {
     }, 1000);
   }
 
+  // When the Stop button is clicked, the above event stops
+  onStopGame() {
+    clearInterval(this.interval);
+  }
+
 }
